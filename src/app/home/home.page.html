@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" placeholder="enter your name" [(ngModel)]="name"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating">Surname</ion-label>
+        <ion-input type="text" placeholder="enter your surname" [(ngModel)]="surname"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating">Age</ion-label>
+        <ion-input type="number" placeholder="how old are you?" [(ngModel)]="age"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select placeholder="Select One"  [(ngModel)]="gender">
+          <ion-select-option value="female">Female</ion-select-option>
+          <ion-select-option value="male">Male</ion-select-option>
+        </ion-select>
+      </ion-item>
+    
+      <ion-button color="primary" expand="full" (click)="nav()">Submit</ion-button>
+    
+  
+</ion-content>
