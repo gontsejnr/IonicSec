@@ -6,4 +6,18 @@
 
 <ion-content>
 
+  <div *ngFor="let person of  personList" class="item">
+
+    {{person.name}}<br>
+    {{person.surname}}<br>
+    {{person.age}}<br>
+    {{person.gender}}
+
+  </div>
+
+<div *ngIf="cat === true">
+    <h4>I am Boss</h4>
+</div>
+
+
 </ion-content>
